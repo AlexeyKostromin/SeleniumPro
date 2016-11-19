@@ -6,26 +6,16 @@ using OpenQA.Selenium.Support.UI;
 
 namespace Selenium
 {
-    [TestFixture]
-    public class MyFirstTest
+    public class Base
     {
-        private IWebDriver driver;
-        private WebDriverWait wait;
+        protected static IWebDriver driver;
+        protected static WebDriverWait wait;
 
         [SetUp]
         public void start()
         {
             driver = new ChromeDriver();
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-        }
-
-        [Test]
-        public void Test1()
-        {
-            driver.Url = "http://www.google.com";
-            driver.FindElement(By.Name("q")).SendKeys("webdriver");
-            driver.FindElement(By.Name("btnG")).Click();
-            wait.Until(ExpectedConditions.TitleIs("webdriver - Поиск в Google"));
         }
 
         [TearDown]

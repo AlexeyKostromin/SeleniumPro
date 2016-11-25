@@ -15,7 +15,26 @@ namespace Selenium
         public void start()
         {
             driver = new ChromeDriver();
+            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(2));
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+        }
+
+        public bool IsElementPresent(By locator)
+        {
+            try
+            {
+                driver.FindElement(locator);
+                return true;
+            }
+            catch (NoSuchElementException)
+            {
+                return false;
+            }
+        }
+
+        public bool IsElementPresentByCount(By locator)
+        {
+            return driver.FindElements(locator).Count > 0;
         }
 
         [TearDown]

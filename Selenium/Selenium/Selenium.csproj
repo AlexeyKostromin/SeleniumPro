@@ -67,6 +67,7 @@
     <Compile Include="LoginWithFireFox.cs" />
     <Compile Include="LoginWithIe.cs" />
     <Compile Include="LoginWithNightly.cs" />
+    <Compile Include="MenuTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

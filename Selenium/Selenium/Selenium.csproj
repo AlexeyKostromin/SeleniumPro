@@ -69,6 +69,7 @@
     <Compile Include="LoginWithNightly.cs" />
     <Compile Include="MenuTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StickersTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

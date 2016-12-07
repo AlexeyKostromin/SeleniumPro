@@ -37,6 +37,13 @@ namespace Selenium
             return driver.FindElements(locator).Count > 0;
         }
 
+        public Random random = new Random();
+
+        public string GenerateEmail()
+        {
+            return string.Format("test_email_" + "{0}" + "@mail.com", random.Next(10000, 99999));
+        }
+
         [TearDown]
         public void stop()
         {

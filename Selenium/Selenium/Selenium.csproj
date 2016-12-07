@@ -62,6 +62,8 @@
   <ItemGroup>
     <Compile Include="AdminHomePage.cs" />
     <Compile Include="CountryAndGeozoneSorting.cs" />
+    <Compile Include="CreateAccountPage.cs" />
+    <Compile Include="CreateAccountTest.cs" />
     <Compile Include="LoginPage.cs" />
     <Compile Include="LoginTest.cs" />
     <Compile Include="Base.cs" />

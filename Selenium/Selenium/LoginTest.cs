@@ -12,7 +12,6 @@ namespace Selenium
         public void CanLoginWithValidCredentialsTest()
         {
             LoginPage.LoginToAdmin();
-            
             wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(AdminHomePage.CssLitecartLogo)));
             
         }

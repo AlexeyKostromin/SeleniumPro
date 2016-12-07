@@ -44,6 +44,11 @@ namespace Selenium
             return string.Format("test_email_" + "{0}" + "@mail.com", random.Next(10000, 99999));
         }
 
+        public string GenerateProductName()
+        {
+            return string.Format("test_product_" + "{0}", random.Next(10000, 99999));
+        }
+
         [TearDown]
         public void stop()
         {

@@ -20,10 +20,18 @@ namespace Selenium
         internal const string XpathGeoZones = ".//ul[@id='box-apps-menu']//span[text()='Geo Zones']";
         internal const string XpathZoneName = ".//*[@class='dataTable']//tr/td[3]/a";
 
+        internal const string XpathCatalog = ".//ul[@id='box-apps-menu']//span[text()='Catalog']";
         public AdminHomePage GoToCountries()
         {
             driver.FindElement(By.XPath(XpathCountries)).Click();
             
+            return new AdminHomePage();
+        }
+
+        public AdminHomePage GoToCatalog()
+        {
+            driver.FindElement(By.XPath(XpathCatalog)).Click();
+
             return new AdminHomePage();
         }
 
@@ -90,6 +98,20 @@ namespace Selenium
             }
 
             return zonesList;
+        }
+
+        public static bool IsProductPresent(string productName)
+        {
+            var createdProducts = driver.FindElements(By.CssSelector(".dataTable a"));
+            foreach (var product in createdProducts)
+            {
+                var productCreated = product.GetAttribute("innerText");
+                if (productCreated == productName)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
         
 

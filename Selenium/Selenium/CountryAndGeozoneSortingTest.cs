@@ -8,7 +8,7 @@ using OpenQA.Selenium;
 
 namespace Selenium
 {
-    public class CountryAndGeozoneSorting : Base
+    public class CountryAndGeozoneSortingTest : Base
     {
         [Test]
         public void CountrySortingTest()

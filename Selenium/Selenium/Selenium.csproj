@@ -60,8 +60,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AddNewProductTest.cs" />
     <Compile Include="AdminHomePage.cs" />
-    <Compile Include="CountryAndGeozoneSorting.cs" />
+    <Compile Include="CountryAndGeozoneSortingTest.cs" />
     <Compile Include="CreateAccountPage.cs" />
     <Compile Include="CreateAccountTest.cs" />
     <Compile Include="LoginPage.cs" />

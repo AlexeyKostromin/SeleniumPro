@@ -14,7 +14,7 @@ namespace Selenium
         [Test]
         public void EveryItemHasStickerTest()
         {
-            driver.Url = "http://localhost/litecart/en/";
+            driver.Url = homePageUrl;
             var products = driver.FindElements(By.CssSelector("[class^=product]"));
 
             for (int i = 0; i < products.Count; i++)
@@ -28,7 +28,7 @@ namespace Selenium
         [Test]
         public void ProductPriceTest()
         {
-            driver.Url = "http://localhost/litecart/en/";
+            driver.Url = homePageUrl;
 
             var campaignsItems = driver.FindElements(By.CssSelector("#box-campaigns li> .link"));
 

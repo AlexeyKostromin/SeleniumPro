@@ -11,6 +11,8 @@ namespace Selenium
         protected static IWebDriver driver;
         protected static WebDriverWait wait;
 
+        protected static string homePageUrl = "http://localhost/litecart/en/";
+
         [SetUp]
         public void start()
         {

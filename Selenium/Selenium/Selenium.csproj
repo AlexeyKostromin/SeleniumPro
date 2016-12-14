@@ -73,6 +73,7 @@
     <Compile Include="LoginWithIe.cs" />
     <Compile Include="LoginWithNightly.cs" />
     <Compile Include="MenuTest.cs" />
+    <Compile Include="OpentLinksTest.cs" />
     <Compile Include="ProductDuck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StickersTest.cs" />

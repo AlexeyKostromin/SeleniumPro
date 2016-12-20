@@ -72,6 +72,7 @@
     <Compile Include="LoginWithFireFox.cs" />
     <Compile Include="LoginWithIe.cs" />
     <Compile Include="LoginWithNightly.cs" />
+    <Compile Include="LogsOnProductsPageTest.cs" />
     <Compile Include="MenuTest.cs" />
     <Compile Include="OpentLinksTest.cs" />
     <Compile Include="ProductDuck.cs" />

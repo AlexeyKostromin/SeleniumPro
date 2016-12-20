@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 
 namespace Selenium
@@ -20,6 +21,14 @@ namespace Selenium
             driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(2));
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
+
+//        public void start()
+//        {
+//            driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), DesiredCapabilities.Chrome());
+//            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(2));
+//            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+//        }
+        
 
         public bool IsElementPresent(By locator)
         {
